@@ -207,10 +207,10 @@ sudo cephadm bootstrap                         \
 GTT
 
 cat > /home/ansible/troubleshootingOSD.sh << GTD
-ceph orch host add server1
-ceph orch host add server2
-ceph orch host add server3
-ceph orch apply osd --all-available-devices
+sudo ceph orch host add server1
+sudo ceph orch host add server2
+sudo ceph orch host add server3
+sudo ceph orch apply osd --all-available-devices
 GTD
 
 sudo chown ansible:ansible /home/ansible/*
